@@ -1,0 +1,83 @@
+.coaching-section {
+  background-color:#eaeaea; /* warm light background */
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.coaching-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-block h2 {
+  font-size: 2.2rem;
+  color: #004080; /* deep navy-blue */
+  margin-bottom: 20px;
+}
+
+.text-block ul {
+  list-style: none;
+  padding-left: 0;
+  color: #444444; /* dark grey for list text */
+}
+
+.text-block li {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.coaching-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .coaching-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-block h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-block li {
+    font-size: 1rem;
+  }
+}
+
+.coach-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.coach-item {
+  background-color: #ffffff;
+  color: #222222;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  flex: 1 1 calc(50% - 16px); /* 2 per row with spacing */
+  min-width: 280px;
+  transition: transform 0.2s ease;
+  border-left: 4px solid #ff6600; /* orange accent */
+}
+
+.coach-item:hover {
+  transform: scale(1.02);
+  background-color: #ffffff;
+}

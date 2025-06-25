@@ -1,0 +1,116 @@
+/* Section Background & Layout */
+.testimonial-section {
+  background: linear-gradient(to right, #fdfbfb, #d9dadb); /* soft gradient */
+  padding: 120px 20px 60px; /* Increased top padding */
+  text-align: center;
+}
+
+/* Title Card with Top Padding */
+.title-card {
+  background: linear-gradient(135deg, #ffffff, #c7c7c7);
+  padding: 40px 20px;
+  margin: 0 auto 50px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  animation: slideFadeUp 1s ease-out forwards;
+}
+
+.title-card h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0A192F;
+  margin: 0;
+  text-align: center;
+}
+
+/* Testimonials Grid */
+.testimonial-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
+  justify-content: center;
+  gap: 30px;
+  padding: 0 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.testimonial-card {
+  background: #cceeff; /* sky blue */
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 280px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+.testimonial-rating {
+  color: #ffba00;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Animations */
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .title-card {
+    padding: 30px 15px;
+  }
+
+  .title-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  .testimonial-cards-container {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card {
+    min-height: auto;
+  }
+}
