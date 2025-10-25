@@ -1,0 +1,264 @@
+.details-wrapper {
+  padding: 80px 20px 40px; /* Added top padding */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffcfc;
+  
+
+}
+
+.details-heading-container {
+  background: linear-gradient(135deg, #26deff, hsl(0, 0%, 100%)); /* orange gradient */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px 0; /* reduce top & bottom margin */
+  text-align: center;
+}
+.details-wrapper {
+  margin-top: 40px; /* Add this if extra space exists */
+  padding-top: 0;
+}
+
+
+
+.details-heading {
+  margin: 0;
+  font-size: 2.2rem;
+  color: rgb(89, 89, 89);
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.sidebar-box:first-child {
+  margin-top: 40px; /* Pushes Search box down */
+}
+
+
+.main-and-sidebar {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 3;
+  min-width: 300px;
+  margin-top: 40px; /* Add this for spacing from the top */
+}
+
+.main-image {
+  width: 100%;
+  max-width: 600px; /* ✅ limit size */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 30px auto; /* ✅ centers the image */
+}
+
+
+
+
+
+
+.post-info {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: 16px;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* COMMENT SECTION */
+
+.comment-section {
+  margin-top: 60px; /* was 40px, increased for more space */
+  background: #fffaf0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.comment-section h2 {
+  color: #0a1d55;
+  margin-bottom: 10px;
+}
+
+.comment-form .row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.comment-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0059d4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* SIDEBAR */
+.sidebar {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-box h3 {
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+  color: #0a1d55;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-box ul li {
+  margin: 8px 0;
+  color: #444;
+}
+
+.sidebar-box ul li span {
+  float: right;
+  color: #888;
+}
+
+/* MOST POPULAR - NO IMAGE VERSION */
+.popular-post.no-image {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.popular-post.no-image span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.popular-post.no-image p {
+  margin: 0;
+  font-weight: bold;
+  color: #0a1d55;
+}
+
+/* FLOATING BUTTONS */
+.floating-icons {
+  position: sticky;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.call-icon,
+.whatsapp-icon {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.whatsapp-icon {
+  background: #25d366;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .main-and-sidebar {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment-form .row {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .post-info {
+    flex-direction: column;
+  }
+
+  .floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}

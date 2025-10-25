@@ -1,0 +1,160 @@
+/* Title Styles */
+.newsevents-title-wrapper {
+  background-color: #f9f8f7; /* very light beige */
+  padding: 100px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes slideFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== Updated Requirements Card ==================== */
+.requirements {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeUp 0.8s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #0A192F;
+}
+
+.requirements:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.requirements h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #263238;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.requirements ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.requirements ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.requirements ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.requirements ul li:hover {
+  color: #007acc;
+}
+
+/* ==================== Reply Section ==================== */
+.reply-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.reply-card {
+  background: #fff8f0; /* light blue background */
+  padding: 20px;
+  border: 1px solid #dde6ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(245, 94, 0, 0.08); /* subtle elevation */
+}
+.reply-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #263238; /* orange accent */
+}
+.reply-card p {
+  margin-bottom: 20px;
+  color: #555;
+}
+.reply-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reply-card form .row {
+  display: flex;
+  gap: 10px;
+}
+.reply-card input,
+.reply-card textarea,
+.reply-card button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+}
+.reply-card button {
+  background: linear-gradient(90deg, #007acc, #0044ff); /* gradient blue */
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+.reply-card button:hover {
+  opacity: 0.9;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 1024px) {
+  .newsevents-title-card {
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .newsevents-title-card {
+    padding: 30px 50px;
+  }
+  .reply-card form .row {
+    flex-direction: column;
+  }
+  .requirements h2 {
+    font-size: 24px;
+  }
+  .requirements ul {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .newsevents-title-card {
+    padding: 25px 20px;
+  }
+  .newsevents-title-card h1 {
+    font-size: 24px;
+  }
+  .requirements h2 {
+    font-size: 22px;
+  }
+  .requirements ul {
+    font-size: 15px;
+  }
+  .requirements ul li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}

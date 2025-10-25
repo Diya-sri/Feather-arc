@@ -1,0 +1,87 @@
+/* src/components/CourtBooking.css */
+
+.court-booking {
+  background-color: #ffffff; /* White background */
+  color: #212121; /* Dark text */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+    .court-booking-container h2 {
+  font-size: 2.2rem;
+  color: #0A192F;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 32px;
+}
+
+}
+
+.court-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.court-content h2 {
+  color: #0A192F; /* Primary */
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.court-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.book-btn {
+  background: linear-gradient(to right, #0288D1, #0A192F); /* Light blue to Primary */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: linear-gradient(to right, #0277BD, #0A192F);
+}
+
+.arrow {
+  font-size: 1.3rem;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .court-content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .court-content ul {
+    font-size: 1rem;
+  }
+
+  .court-content {
+    text-align: center;
+  }
+
+  .book-btn {
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+}

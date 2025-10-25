@@ -1,0 +1,129 @@
+
+.academy-section {
+  padding: 0 20px 60px; /* Remove top padding */
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.academy-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.academy-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.academy-image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.experience-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FF6F00;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-top-right-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(50%);
+  width: fit-content;
+}
+
+.experience-box h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.experience-box p {
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.academy-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.academy-content h2 {
+  font-size: 2.5rem;
+  color: #0A192F;
+  margin-bottom: 20px;
+}
+
+.academy-content p {
+  color: #212121;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  display: inline-block;
+  background-color: #e7f0ff;
+  color: #FF6F00;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .academy-container {
+    gap: 30px;
+  }
+  .academy-content h2 {
+    font-size: 2rem;
+  }
+  .experience-box h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .academy-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .academy-content, .academy-image {
+    min-width: 100%;
+  }
+  .experience-box {
+    position: relative;
+    transform: none;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .academy-content h2 {
+    font-size: 1.6rem;
+  }
+  .academy-content p {
+    font-size: 0.95rem;
+  }
+  .highlight {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  .experience-box h3 {
+    font-size: 1.1rem;
+  }
+  .experience-box p {
+    font-size: 0.8rem;
+  }
+}

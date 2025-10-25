@@ -1,0 +1,70 @@
+.badmintonkits-section {
+  background-color: #F5F7FA; /* Background */
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.kits-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.kits-text-block {
+  flex: 1;
+  min-width: 320px;
+  background-color: hsl(26, 100%, 96%); /* Accent */
+  color: #212121; /* Text color */
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.kits-text-block h2 {
+  font-size: 2rem;
+  color: #0A192F; /* Primary */
+  margin-bottom: 20px;
+}
+
+.kits-text-block p {
+  color: #212121;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.kits-icon {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.kits-image-block {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.kits-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .kits-container {
+    flex-direction: column;
+  }
+
+  .kits-text-block h2 {
+    font-size: 1.8rem;
+  }
+
+  .kits-text-block p {
+    font-size: 1rem;
+  }
+}

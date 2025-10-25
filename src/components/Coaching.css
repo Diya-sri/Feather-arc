@@ -1,0 +1,116 @@
+.coaching-content-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.coaching-text {
+  flex: 1;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  color: #212121;
+  line-height: 1.8;
+  min-width: 280px;
+}
+
+.coaching-tagline {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FF6F00;
+  margin-bottom: 10px;
+}
+
+.coaching-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.coaching-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.founder-hero{
+   position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 250px;
+  background-color: #0A192F;
+  overflow: hidden;
+}
+.founder-hero h1{
+  text-align: center;
+  padding-bottom: 50px;
+}
+ .founder-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* same overlay as Achievers */
+  z-index: 0;
+ }
+
+/* Responsive tablets */
+@media (max-width: 768px) {
+  .coaching-content-block {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .founder-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* same overlay as Achievers */
+  z-index: 0;
+}
+
+.founder-hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+  .coaching-text {
+    font-size: 16px;
+  }
+
+  .coaching-tagline {
+    margin-bottom: 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .coaching-content-block {
+    padding: 0 10px;
+  }
+
+  .coaching-text {
+    font-size: 15px;
+  }
+
+  .coaching-tagline {
+    font-size: 14px;
+  }
+}
