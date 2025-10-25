@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/badminton-aca/static/css/main.44736779.css",
+    "main.js": "/badminton-aca/static/js/main.d05f2ef3.js",
+    "static/media/kits-icon.png": "/badminton-aca/static/media/kits-icon.1b0b6acdc5940a51587e.png",
+    "static/media/badminton-shop.jpg": "/badminton-aca/static/media/badminton-shop.d39f9f49f435d280b7fb.jpg",
+    "static/media/feather-building.png": "/badminton-aca/static/media/feather-building.20aa86ed48b282ef1780.png",
+    "static/media/about-hero.png": "/badminton-aca/static/media/about-hero.356212873685387ec1ea.png",
+    "static/media/badminton-hero.jpg": "/badminton-aca/static/media/badminton-hero.1a965ebbd26e4e97c777.jpg",
+    "static/media/image-bg.jpeg": "/badminton-aca/static/media/image-bg.a14c904daced01803008.jpeg",
+    "index.html": "/badminton-aca/index.html",
+    "main.44736779.css.map": "/badminton-aca/static/css/main.44736779.css.map",
+    "main.d05f2ef3.js.map": "/badminton-aca/static/js/main.d05f2ef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44736779.css",
+    "static/js/main.d05f2ef3.js"
+  ]
+}
