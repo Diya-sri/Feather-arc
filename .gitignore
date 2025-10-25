@@ -3,6 +3,7 @@ node_modules/
 
 # Ignore build output
 build/
+src.zip
 
 # Optional: ignore log files
 npm-debug.log

@@ -19,20 +19,18 @@ import NewsEvents from './components/NewsEvents';
 import Hiring from './components/Hiring';
 import Details from './components/Details';
 import Testimonials from './components/Testimonials';
-import Call from './components/Call'; // ✅ new import
-
-
-
+import Call from './components/Call';
 
 function App() {
   const location = useLocation();
-  const isHomeExtraSection = location.pathname === '/';
+  const isHomeExtraSection = location.pathname === '/' || location.pathname === '/Feather-arc/';
 
   return (
     <div className="App">
       <Header />
 
       <Routes>
+        <Route path="/" element={<QuoteBanner />} /> {/* Home content or first section */}
         <Route path="/about/overview" element={<Overview />} />
         <Route path="/about/founder" element={<Founder />} />
         <Route path="/about/team" element={<Team />} />
@@ -44,18 +42,13 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/testimonials" element={<Testimonials />} /> 
         <Route path="/call" element={<Call />} /> 
-
-        
-
       </Routes>
 
       {isHomeExtraSection && (
         <>
-          <QuoteBanner />
           <AcademyIntro />
           <Mission />
           <Benefits />
-          
           <HomeContact />
           <Footer />
         </>
