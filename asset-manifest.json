@@ -1,19 +1,13 @@
 {
   "files": {
-    "main.css": "/Feather-arc/static/css/main.44736779.css",
-    "main.js": "/Feather-arc/static/js/main.9ae00861.js",
-    "static/media/kits-icon.png": "/Feather-arc/static/media/kits-icon.1b0b6acdc5940a51587e.png",
-    "static/media/badminton-shop.jpg": "/Feather-arc/static/media/badminton-shop.d39f9f49f435d280b7fb.jpg",
-    "static/media/feather-building.png": "/Feather-arc/static/media/feather-building.20aa86ed48b282ef1780.png",
-    "static/media/about-hero.png": "/Feather-arc/static/media/about-hero.356212873685387ec1ea.png",
-    "static/media/badminton-hero.jpg": "/Feather-arc/static/media/badminton-hero.1a965ebbd26e4e97c777.jpg",
-    "static/media/image-bg.jpeg": "/Feather-arc/static/media/image-bg.a14c904daced01803008.jpeg",
+    "main.css": "/Feather-arc/static/css/main.962e42bc.css",
+    "main.js": "/Feather-arc/static/js/main.5c4069b8.js",
     "index.html": "/Feather-arc/index.html",
-    "main.44736779.css.map": "/Feather-arc/static/css/main.44736779.css.map",
-    "main.9ae00861.js.map": "/Feather-arc/static/js/main.9ae00861.js.map"
+    "main.962e42bc.css.map": "/Feather-arc/static/css/main.962e42bc.css.map",
+    "main.5c4069b8.js.map": "/Feather-arc/static/js/main.5c4069b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.44736779.css",
-    "static/js/main.9ae00861.js"
+    "static/css/main.962e42bc.css",
+    "static/js/main.5c4069b8.js"
   ]
 }
