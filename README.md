@@ -47,9 +47,9 @@ This project demonstrates a **front-end React application** that:
 
 ##  Future Improvements
 
-* 📱 Full mobile responsiveness
-* 🎨 UI refinement and animations
-* 🔍 SEO and accessibility enhancements
+*  Full mobile responsiveness
+*  UI refinement and animations
+*  SEO and accessibility enhancements
 
 ---
 
@@ -61,7 +61,7 @@ For collaboration, feedback, or queries:
 
 ---
 
-## ⭐ bout This Project
+## About This Project
 
 This project demonstrates **React JS development skills**, component-based architecture, and deployment workflows. It’s designed as a clean, professional showcase of front-end development and UI design for real-world applications.
 
