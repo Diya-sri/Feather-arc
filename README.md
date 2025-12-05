@@ -1,4 +1,5 @@
 Feather Arc Badminton Academy – React JS Website
+[Optimized for laptop/desktop view; not fully responsive on mobile devices]
 
 A fully functional, component-based React web application built to showcase the Feather Arc Badminton Academy’s programs, coaches, facilities, achievements, and contact information.
 Live Demo
@@ -25,4 +26,4 @@ Smooth navigation and clean UI design
 
 Organized CSS for each component
 
-Optimized for laptop/desktop view; not fully responsive on mobile devices
+
